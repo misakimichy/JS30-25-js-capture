@@ -6,6 +6,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+}
+
 div {
     width: 100%;
     padding: 100px;
@@ -21,4 +25,12 @@ div {
 
 .three {
     background: #fcddbc;
+}
+
+button {
+    font-size: 20px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
 }
