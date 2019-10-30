@@ -3,19 +3,18 @@
     const button = document.querySelector('button');
 
     const logText = e => {
-        // stop bubbling
-        // e.stopPropagation();
         console.log(e.currentTarget.classList.value);
+        // stop bubbling
+        e.stopPropagation();
     };
 
     divs.forEach(div => div.addEventListener('click', logText, {
-        capture: false,
         once: true
     }));
 
     button.addEventListener('click', () => {
-        console.log("Click!");
+        console.log('Click!');
     }, {
-        once: true
+        // once: true
     });
 }());
