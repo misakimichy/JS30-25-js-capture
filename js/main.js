@@ -12,4 +12,10 @@
         capture: false,
         once: true
     }));
+
+    button.addEventListener('click', () => {
+        console.log("Click!");
+    }, {
+        once: true
+    });
 }());
